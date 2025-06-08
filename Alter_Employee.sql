@@ -1,0 +1,9 @@
+ALTER TABLE Employee
+ADD CONSTRAINT fk_reporting_manager
+FOREIGN KEY (REPORTING_MANAGER_EMP_ID) REFERENCES Manager(EMP_ID);
+
+
+
+
+
+

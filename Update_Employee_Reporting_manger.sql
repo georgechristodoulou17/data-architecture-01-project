@@ -1,0 +1,5 @@
+UPDATE Employee e
+SET REPORTING_MANAGER_EMP_ID = m.EMP_ID
+FROM proj_stg ps
+JOIN Employee m ON CONCAT(m.FIRST_NAME, ' ', m.LAST_NAME) = ps.MANAGER
+WHERE e.EMP_ID = ps.EMP_ID;
